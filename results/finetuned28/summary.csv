@@ -1,0 +1,4 @@
+method,target_fraction,accuracy_before_finetune,fp32_accuracy,int8_accuracy,test_samples,finetune_epochs,stored_parameters,weight_parameters,nonzero_weights,weight_sparsity,fp32_dense_payload_bytes,int8_dense_payload_bytes,csr_fp32_estimate_bytes,csr_int8_estimate_bytes,channels
+baseline,0.0,0.8884,0.8884,0.8879,10000,0,44426,44190,44190,0.0,177704,45139,267048,134483,"[6, 16, 120, 84]"
+unstructured,0.5,0.8731,0.8874,0.8885,10000,3,44426,44190,22095,0.5,177704,45139,134478,68198,"[6, 16, 120, 84]"
+structured,0.5,0.4638,0.855,0.855,10000,3,11418,11295,11295,0.0,45672,11792,68774,34894,"[3, 8, 60, 42]"
