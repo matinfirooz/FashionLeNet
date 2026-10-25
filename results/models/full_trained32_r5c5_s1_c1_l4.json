@@ -1,0 +1,64 @@
+{
+  "kind": "transaction_level_model",
+  "bundle": "examples/trained32",
+  "rows": 5,
+  "cols": 5,
+  "cache": 1,
+  "sparse": 1,
+  "l2_latency": 4,
+  "cycles": 2249791,
+  "mac_attempted": 416520,
+  "mac_executed": 241553,
+  "cache_hits": 257967,
+  "cache_misses": 15902,
+  "cache_bypasses": 0,
+  "logical_reads": 273869,
+  "logical_writes": 8094,
+  "l2_byte_reads": 254432,
+  "l2_byte_writes": 8094,
+  "phases": [
+    {
+      "phase": "conv1",
+      "cycles": 439834,
+      "MACs": 117600,
+      "executed_MACs": 38598
+    },
+    {
+      "phase": "pool1",
+      "cycles": 50402,
+      "MACs": 0,
+      "executed_MACs": 0
+    },
+    {
+      "phase": "conv2",
+      "cycles": 914516,
+      "MACs": 240000,
+      "executed_MACs": 163632
+    },
+    {
+      "phase": "pool2",
+      "cycles": 16866,
+      "MACs": 0,
+      "executed_MACs": 0
+    },
+    {
+      "phase": "conv3",
+      "cycles": 669532,
+      "MACs": 48000,
+      "executed_MACs": 34136
+    },
+    {
+      "phase": "fc1",
+      "cycles": 149437,
+      "MACs": 10080,
+      "executed_MACs": 4780
+    },
+    {
+      "phase": "fc2",
+      "cycles": 9086,
+      "MACs": 840,
+      "executed_MACs": 407
+    }
+  ],
+  "validated_against_rtl": "results/verification/full_trained32_r5c5_s1_c1_l4.json"
+}

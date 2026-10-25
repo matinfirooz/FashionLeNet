@@ -1,0 +1,64 @@
+{
+  "kind": "transaction_level_model",
+  "bundle": "examples/pruned28",
+  "rows": 5,
+  "cols": 5,
+  "cache": 1,
+  "sparse": 1,
+  "l2_latency": 4,
+  "cycles": 2901741,
+  "mac_attempted": 281640,
+  "mac_executed": 115342,
+  "cache_hits": 164079,
+  "cache_misses": 24984,
+  "cache_bypasses": 0,
+  "logical_reads": 189063,
+  "logical_writes": 5814,
+  "l2_byte_reads": 399744,
+  "l2_byte_writes": 5814,
+  "phases": [
+    {
+      "phase": "conv1",
+      "cycles": 333372,
+      "MACs": 86400,
+      "executed_MACs": 28395
+    },
+    {
+      "phase": "pool1",
+      "cycles": 36866,
+      "MACs": 0,
+      "executed_MACs": 0
+    },
+    {
+      "phase": "conv2",
+      "cycles": 594176,
+      "MACs": 153600,
+      "executed_MACs": 73003
+    },
+    {
+      "phase": "pool2",
+      "cycles": 10530,
+      "MACs": 0,
+      "executed_MACs": 0
+    },
+    {
+      "phase": "conv3",
+      "cycles": 1759324,
+      "MACs": 30720,
+      "executed_MACs": 10704
+    },
+    {
+      "phase": "fc1",
+      "cycles": 152893,
+      "MACs": 10080,
+      "executed_MACs": 2859
+    },
+    {
+      "phase": "fc2",
+      "cycles": 14462,
+      "MACs": 840,
+      "executed_MACs": 381
+    }
+  ],
+  "validated_against_rtl": "results/verification_pruned/full_pruned28_r5c5_s1_c1_l4.json"
+}
