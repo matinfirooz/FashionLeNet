@@ -1,0 +1,86 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.7661011856295846,
+    "train_accuracy": 0.7093818181818182,
+    "validation_accuracy": 0.7918,
+    "seconds": 3.8908656959999917
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.47807390816428447,
+    "train_accuracy": 0.8256181818181818,
+    "validation_accuracy": 0.8434,
+    "seconds": 3.694312082000124
+  },
+  {
+    "epoch": 3,
+    "train_loss": 0.4131443913936615,
+    "train_accuracy": 0.8492909090909091,
+    "validation_accuracy": 0.8566,
+    "seconds": 4.091042203999905
+  },
+  {
+    "epoch": 4,
+    "train_loss": 0.37470140806111424,
+    "train_accuracy": 0.8628,
+    "validation_accuracy": 0.872,
+    "seconds": 4.095802935999927
+  },
+  {
+    "epoch": 5,
+    "train_loss": 0.3430334254178134,
+    "train_accuracy": 0.8749636363636364,
+    "validation_accuracy": 0.8746,
+    "seconds": 4.41676819700001
+  },
+  {
+    "epoch": 6,
+    "train_loss": 0.3190592177694494,
+    "train_accuracy": 0.8830363636363636,
+    "validation_accuracy": 0.886,
+    "seconds": 4.0483362770000895
+  },
+  {
+    "epoch": 7,
+    "train_loss": 0.3024790164990859,
+    "train_accuracy": 0.8885090909090909,
+    "validation_accuracy": 0.8908,
+    "seconds": 3.839407505000054
+  },
+  {
+    "epoch": 8,
+    "train_loss": 0.28794522513476284,
+    "train_accuracy": 0.8943090909090909,
+    "validation_accuracy": 0.8816,
+    "seconds": 3.8389070129999254
+  },
+  {
+    "epoch": 9,
+    "train_loss": 0.27685394423441456,
+    "train_accuracy": 0.8979454545454545,
+    "validation_accuracy": 0.894,
+    "seconds": 3.7580277960000785
+  },
+  {
+    "epoch": 10,
+    "train_loss": 0.2678178748477589,
+    "train_accuracy": 0.9016,
+    "validation_accuracy": 0.8972,
+    "seconds": 3.5227402949999487
+  },
+  {
+    "epoch": 11,
+    "train_loss": 0.2621185357245532,
+    "train_accuracy": 0.9033636363636364,
+    "validation_accuracy": 0.8968,
+    "seconds": 4.5139929409999695
+  },
+  {
+    "epoch": 12,
+    "train_loss": 0.25882714622670955,
+    "train_accuracy": 0.9054181818181818,
+    "validation_accuracy": 0.8978,
+    "seconds": 3.9867385700001705
+  }
+]
