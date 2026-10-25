@@ -1,0 +1,266 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2250" height="1200" viewBox="0 0 2250 1200">
+<defs><marker id="arrd" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="9" orient="auto-start-reverse" markerUnits="userSpaceOnUse" overflow="visible"><path d="M0 0L10 5L0 10z" fill="#192d40" /></marker><marker id="arrc" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="9" orient="auto-start-reverse" markerUnits="userSpaceOnUse" overflow="visible"><path d="M0 0L10 5L0 10z" fill="#087f86" /></marker><marker id="arrg" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="9" orient="auto-start-reverse" markerUnits="userSpaceOnUse" overflow="visible"><path d="M0 0L10 5L0 10z" fill="#657580" /></marker><marker id="arrsmall" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse" markerUnits="userSpaceOnUse" overflow="visible"><path d="M0 0L10 5L0 10z" fill="#192d40" /></marker><marker id="arrwrite" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="9" orient="auto-start-reverse" markerUnits="userSpaceOnUse" overflow="visible"><path d="M0 0L10 5L0 10z" fill="#3d6f9a" /></marker></defs>
+<rect width="2250" height="1200" fill="white" />
+<text x="48" y="48" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="31" font-weight="bold">FashionLeNet: hardware datapath and shared memory interface</text>
+<text x="48" y="80" fill="#657580" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal">The five weighted layers reuse one 5 x 5 output-stationary array; the byte-wide memory port gathers each boundary vector.</text>
+<path d="M48,105 L2202,105" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
+<rect x="750" y="135" width="1300" height="870" fill="none" stroke="#c5d0d7" stroke-width="1.4" stroke-dasharray="8 5" />
+<text x="764" y="161" fill="#657580" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="bold">lenet_core: compute and output datapaths</text>
+<rect x="65" y="280" width="300" height="420" fill="#e9f3f0" stroke="#192d40" stroke-width="2" />
+<path d="M78,280 L78,700" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M352,280 L352,700" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="215.0" y="315" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="bold">L2: 80 KiB RAM</text>
+<path d="M78,331.0 L352,331.0" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="215.0" y="362.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal">Parameters: 64 KiB</text>
+<path d="M78,417.25 L352,417.25" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="215.0" y="448.25" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal">Activation A: 8 KiB</text>
+<path d="M78,503.5 L352,503.5" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="215.0" y="534.5" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal">Activation B: 8 KiB</text>
+<path d="M78,589.75 L352,589.75" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="215.0" y="620.75" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal">Response delay: 1 / 4 clk</text>
+<text x="65" y="221" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="bold">Host byte loader</text>
+<path d="M215,235 L215,280" fill="none" stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M215,235 L215,280" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M210,257 L220,243" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="223" y="241" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">17A / 8D</text>
+<text x="65" y="751" fill="#192d40" text-anchor="start" font-family="DejaVu Sans Mono,monospace" font-size="16" font-weight="normal">host_ready = !busy &amp; !start</text>
+<rect x="445" y="330" width="235" height="245" fill="#e9f3f0" stroke="#192d40" stroke-width="2" />
+<text x="562.5" y="448.5" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold">L1 cache</text>
+<text x="562.5" y="477.5" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">1 KiB / direct mapped</text>
+<text x="562" y="515" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">64 lines x 16 bytes</text>
+<text x="562" y="544" fill="#087f86" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">cache_en / bypass</text>
+<path d="M445,385 L365,385" fill="none" stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M445,385 L365,385" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M395,392 L405,378" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="408" y="376" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">17A</text>
+<text x="400" y="348" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">write / read</text>
+<path d="M365,490 L445,490" fill="none" stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M365,490 L445,490" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M397,497 L407,483" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="410" y="481" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">8</text>
+<text x="398" y="530" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">rsp_data</text>
+<rect x="795" y="200" width="260" height="115" fill="#e9f3f0" stroke="#192d40" stroke-width="2" />
+<text x="925.0" y="253.5" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold">Address / tile logic</text>
+<text x="925.0" y="282.5" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">m0, n0, k_index, lane</text>
+<rect x="800" y="360" width="210" height="170" fill="#ffffff" stroke="#192d40" stroke-width="2" />
+<text x="905.0" y="441.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold">Byte gather</text>
+<text x="905.0" y="470.0" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">lane write enables</text>
+<path d="M680,452 L800,452" fill="none" stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M680,452 L800,452" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M732,459 L742,445" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="745" y="443" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">8</text>
+<text x="735" y="416" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal">rsp_data</text>
+<rect x="1090" y="239" width="185" height="93" fill="#eaf2f8" stroke="#192d40" stroke-width="2" />
+<text x="1102" y="263" fill="#657580" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">D</text>
+<text x="1263" y="263" fill="#657580" text-anchor="end" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">Q</text>
+<text x="1182.5" y="287.5" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="bold">A_pack</text>
+<text x="1182.5" y="309.5" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal">40b</text>
+<path d="M1090,307 L1102,315 L1090,323" fill="none" stroke="#192d40" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="1182.5" y="325" fill="#087f86" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" font-weight="normal">EN: A_WAIT</text>
+<rect x="1090" y="419" width="185" height="93" fill="#eaf2f8" stroke="#192d40" stroke-width="2" />
+<text x="1102" y="443" fill="#657580" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">D</text>
+<text x="1263" y="443" fill="#657580" text-anchor="end" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">Q</text>
+<text x="1182.5" y="467.5" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="bold">B_pack</text>
+<text x="1182.5" y="489.5" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal">40b</text>
+<path d="M1090,487 L1102,495 L1090,503" fill="none" stroke="#192d40" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="1182.5" y="505" fill="#087f86" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" font-weight="normal">EN: B_WAIT</text>
+<path d="M1010,405 L1061,405 Q1070,405 1070,396 L1070,294 Q1070,285 1079,285 L1090,285" fill="none" stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1010,405 L1061,405 Q1070,405 1070,396 L1070,294 Q1070,285 1079,285 L1090,285" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M1065,377 L1075,363" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="1080" y="378" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">40</text>
+<path d="M1010,490 L1061,490 Q1070,490 1070,481 L1070,474 Q1070,465 1079,465 L1090,465" fill="none" stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1010,490 L1061,490 Q1070,490 1070,481 L1070,474 Q1070,465 1079,465 L1090,465" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M1033,497 L1043,483" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="1040" y="518" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">40</text>
+<rect x="1330" y="239" width="165" height="93" fill="#eaf2f8" stroke="#192d40" stroke-width="2" />
+<text x="1412.5" y="281.5" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold">A skew</text>
+<text x="1412.5" y="310.5" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">0,1,2,3,4D</text>
+<rect x="1330" y="419" width="165" height="93" fill="#eaf2f8" stroke="#192d40" stroke-width="2" />
+<text x="1412.5" y="461.5" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold">B skew</text>
+<text x="1412.5" y="490.5" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">0,1,2,3,4D</text>
+<path d="M1275,285 L1330,285" fill="none" stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1275,285 L1330,285" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M1297,292 L1307,278" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="1310" y="276" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">40</text>
+<path d="M1275,465 L1330,465" fill="none" stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1275,465 L1330,465" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M1297,472 L1307,458" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="1310" y="456" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">40</text>
+<rect x="1575" y="235" width="390" height="315" fill="#ffffff" stroke="#192d40" stroke-width="2" />
+<text x="1770" y="273" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="bold">5 x 5 PE mesh</text>
+<rect x="1615" y="302" width="44" height="31" fill="#eaf2f8" stroke="#192d40" stroke-width="1.3" />
+<text x="1637" y="323" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">PE</text>
+<path d="M1659,317 L1677,317" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<path d="M1637,333 L1637,345" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<rect x="1677" y="302" width="44" height="31" fill="#eaf2f8" stroke="#192d40" stroke-width="1.3" />
+<text x="1699" y="323" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">PE</text>
+<path d="M1721,317 L1739,317" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<path d="M1699,333 L1699,345" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<rect x="1739" y="302" width="44" height="31" fill="#eaf2f8" stroke="#192d40" stroke-width="1.3" />
+<text x="1761" y="323" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">PE</text>
+<path d="M1783,317 L1801,317" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<path d="M1761,333 L1761,345" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<rect x="1801" y="302" width="44" height="31" fill="#eaf2f8" stroke="#192d40" stroke-width="1.3" />
+<text x="1823" y="323" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">PE</text>
+<path d="M1845,317 L1863,317" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<path d="M1823,333 L1823,345" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<rect x="1863" y="302" width="44" height="31" fill="#eaf2f8" stroke="#192d40" stroke-width="1.3" />
+<text x="1885" y="323" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">PE</text>
+<path d="M1885,333 L1885,345" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<rect x="1615" y="345" width="44" height="31" fill="#eaf2f8" stroke="#192d40" stroke-width="1.3" />
+<text x="1637" y="366" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">PE</text>
+<path d="M1659,360 L1677,360" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<path d="M1637,376 L1637,388" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<rect x="1677" y="345" width="44" height="31" fill="#eaf2f8" stroke="#192d40" stroke-width="1.3" />
+<text x="1699" y="366" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">PE</text>
+<path d="M1721,360 L1739,360" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<path d="M1699,376 L1699,388" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<rect x="1739" y="345" width="44" height="31" fill="#eaf2f8" stroke="#192d40" stroke-width="1.3" />
+<text x="1761" y="366" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">PE</text>
+<path d="M1783,360 L1801,360" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<path d="M1761,376 L1761,388" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<rect x="1801" y="345" width="44" height="31" fill="#eaf2f8" stroke="#192d40" stroke-width="1.3" />
+<text x="1823" y="366" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">PE</text>
+<path d="M1845,360 L1863,360" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<path d="M1823,376 L1823,388" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<rect x="1863" y="345" width="44" height="31" fill="#eaf2f8" stroke="#192d40" stroke-width="1.3" />
+<text x="1885" y="366" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">PE</text>
+<path d="M1885,376 L1885,388" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<rect x="1615" y="388" width="44" height="31" fill="#eaf2f8" stroke="#192d40" stroke-width="1.3" />
+<text x="1637" y="409" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">PE</text>
+<path d="M1659,403 L1677,403" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<path d="M1637,419 L1637,431" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<rect x="1677" y="388" width="44" height="31" fill="#eaf2f8" stroke="#192d40" stroke-width="1.3" />
+<text x="1699" y="409" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">PE</text>
+<path d="M1721,403 L1739,403" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<path d="M1699,419 L1699,431" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<rect x="1739" y="388" width="44" height="31" fill="#eaf2f8" stroke="#192d40" stroke-width="1.3" />
+<text x="1761" y="409" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">PE</text>
+<path d="M1783,403 L1801,403" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<path d="M1761,419 L1761,431" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<rect x="1801" y="388" width="44" height="31" fill="#eaf2f8" stroke="#192d40" stroke-width="1.3" />
+<text x="1823" y="409" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">PE</text>
+<path d="M1845,403 L1863,403" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<path d="M1823,419 L1823,431" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<rect x="1863" y="388" width="44" height="31" fill="#eaf2f8" stroke="#192d40" stroke-width="1.3" />
+<text x="1885" y="409" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">PE</text>
+<path d="M1885,419 L1885,431" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<rect x="1615" y="431" width="44" height="31" fill="#eaf2f8" stroke="#192d40" stroke-width="1.3" />
+<text x="1637" y="452" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">PE</text>
+<path d="M1659,446 L1677,446" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<path d="M1637,462 L1637,474" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<rect x="1677" y="431" width="44" height="31" fill="#eaf2f8" stroke="#192d40" stroke-width="1.3" />
+<text x="1699" y="452" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">PE</text>
+<path d="M1721,446 L1739,446" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<path d="M1699,462 L1699,474" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<rect x="1739" y="431" width="44" height="31" fill="#eaf2f8" stroke="#192d40" stroke-width="1.3" />
+<text x="1761" y="452" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">PE</text>
+<path d="M1783,446 L1801,446" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<path d="M1761,462 L1761,474" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<rect x="1801" y="431" width="44" height="31" fill="#eaf2f8" stroke="#192d40" stroke-width="1.3" />
+<text x="1823" y="452" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">PE</text>
+<path d="M1845,446 L1863,446" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<path d="M1823,462 L1823,474" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<rect x="1863" y="431" width="44" height="31" fill="#eaf2f8" stroke="#192d40" stroke-width="1.3" />
+<text x="1885" y="452" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">PE</text>
+<path d="M1885,462 L1885,474" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<rect x="1615" y="474" width="44" height="31" fill="#eaf2f8" stroke="#192d40" stroke-width="1.3" />
+<text x="1637" y="495" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">PE</text>
+<path d="M1659,489 L1677,489" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<rect x="1677" y="474" width="44" height="31" fill="#eaf2f8" stroke="#192d40" stroke-width="1.3" />
+<text x="1699" y="495" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">PE</text>
+<path d="M1721,489 L1739,489" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<rect x="1739" y="474" width="44" height="31" fill="#eaf2f8" stroke="#192d40" stroke-width="1.3" />
+<text x="1761" y="495" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">PE</text>
+<path d="M1783,489 L1801,489" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<rect x="1801" y="474" width="44" height="31" fill="#eaf2f8" stroke="#192d40" stroke-width="1.3" />
+<text x="1823" y="495" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">PE</text>
+<path d="M1845,489 L1863,489" fill="none" stroke="#192d40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter" marker-end="url(#arrsmall)" />
+<rect x="1863" y="474" width="44" height="31" fill="#eaf2f8" stroke="#192d40" stroke-width="1.3" />
+<text x="1885" y="495" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">PE</text>
+<text x="1770" y="535" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal">Local ACC bank: 25 x 32b</text>
+<path d="M1495,285 L1575,285" fill="none" stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1495,285 L1575,285" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M1545,292 L1555,278" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="1558" y="270" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" font-weight="normal">40</text>
+<text x="1515" y="354" fill="#657580" text-anchor="end" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" font-weight="normal">+5 valid</text>
+<path d="M1495,465 L1516,465 Q1525,465 1525,456 L1525,293 Q1539,285 1525,277 L1525,189 Q1525,180 1534,180 L1761,180 Q1770,180 1770,189 L1770,235" fill="none" stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1495,465 L1516,465 Q1525,465 1525,456 L1525,293 Q1539,285 1525,277 L1525,189 Q1525,180 1534,180 L1761,180 Q1770,180 1770,189 L1770,235" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M1660,187 L1670,173" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="1673" y="200" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">40</text>
+<text x="1615" y="160" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal">B north + 5 valid bits</text>
+<polygon points="1690,645 1790,662 1790,788 1690,805" fill="#faf3e7" stroke="#192d40" stroke-width="2" />
+<text x="1740.0" y="731.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="bold">25:1</text>
+<path d="M1770,550 L1770,591 Q1770,600 1761,600 L1669,600 Q1660,600 1660,609 L1660,676 Q1660,685 1669,685 L1690,685" fill="none" stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1770,550 L1770,591 Q1770,600 1761,600 L1669,600 Q1660,600 1660,609 L1660,676 Q1660,685 1669,685 L1690,685" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M1765,582 L1775,568" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="1778" y="566" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">800</text>
+<text x="1678" y="830" fill="#087f86" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal">pr / pc</text>
+<path d="M1740,830 L1740,805" fill="none" stroke="white" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1740,830 L1740,805" fill="none" stroke="#087f86" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrc)" stroke-dasharray="7 5" />
+<rect x="1850" y="680" width="190" height="110" fill="#faf3e7" stroke="#192d40" stroke-width="2" />
+<text x="1945.0" y="731.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold">Bias + scale</text>
+<text x="1945.0" y="760.0" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">INT32 -&gt; INT8</text>
+<path d="M1790,725 L1850,725" fill="none" stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1790,725 L1850,725" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M1815,732 L1825,718" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="1828" y="716" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">32</text>
+<rect x="1050" y="755" width="225" height="115" fill="#ffffff" stroke="#192d40" stroke-width="2" />
+<text x="1162.5" y="808.5" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold">Pool engine</text>
+<text x="1162.5" y="837.5" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">4 x INT8 signed max</text>
+<rect x="1325" y="850" width="225" height="105" fill="#ffffff" stroke="#192d40" stroke-width="2" />
+<text x="1437.5" y="898.5" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold">Class scan</text>
+<text x="1437.5" y="927.5" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">argmax / 10 logits</text>
+<path d="M1550,905 L1980,905" fill="none" stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1550,905 L1980,905" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M1795,912 L1805,898" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="1808" y="896" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">4</text>
+<text x="1795" y="878" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans Mono,monospace" font-size="16" font-weight="normal">prediction[3:0]</text>
+<polygon points="935,650 785,667 785,878 935,895" fill="#faf3e7" stroke="#192d40" stroke-width="2" />
+<text x="860.0" y="778.5" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="bold">Req select</text>
+<path d="M1050,785 L935,785" fill="none" stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1050,785 L935,785" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M987,792 L997,778" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="1005" y="767" fill="#192d40" text-anchor="end" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" font-weight="normal">17A / 8D</text>
+<path d="M1325,905 L1299,905 Q1290,905 1290,896 L1290,894 Q1290,885 1281,885 L969,885 Q960,885 960,876 L960,854 Q960,845 951,845 L935,845" fill="none" stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1325,905 L1299,905 Q1290,905 1290,896 L1290,894 Q1290,885 1281,885 L969,885 Q960,885 960,876 L960,854 Q960,845 951,845 L935,845" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M1190,892 L1200,878" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="1203" y="908" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">17</text>
+<path d="M2040,735 L2096,735 Q2105,735 2105,744 L2105,976 Q2105,985 2096,985 L1024,985 Q1015,985 1015,976 L1015,893 Q1029,885 1015,877 L1015,793 Q1029,785 1015,777 L1015,714 Q1015,705 1006,705 L935,705" fill="none" stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M2040,735 L2096,735 Q2105,735 2105,744 L2105,976 Q2105,985 2096,985 L1024,985 Q1015,985 1015,976 L1015,893 Q1029,885 1015,877 L1015,793 Q1029,785 1015,777 L1015,714 Q1015,705 1006,705 L935,705" fill="none" stroke="#3d6f9a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrwrite)" />
+<path d="M1775,992 L1785,978" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="1788" y="976" fill="#3d6f9a" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">8</text>
+<text x="1495" y="1032" fill="#3d6f9a" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">Quantized writeback / shared activation RAM</text>
+<path d="M925,315 L925,331 Q925,340 916,340 L779,340 Q770,340 770,349 L770,444 Q784,452 770,460 L770,582 Q784,590 770,598 L770,601 Q770,610 779,610 L851,610 Q860,610 860,619 L860,650" fill="none" stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M925,315 L925,331 Q925,340 916,340 L779,340 Q770,340 770,349 L770,444 Q784,452 770,460 L770,582 Q784,590 770,598 L770,601 Q770,610 779,610 L851,610 Q860,610 860,619 L860,650" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M825,617 L835,603" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="838" y="601" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">17</text>
+<path d="M785,772 L719,772 Q710,772 710,763 L710,460 Q696,452 710,444 L710,379 Q710,370 701,370 L680,370" fill="none" stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M785,772 L719,772 Q710,772 710,763 L710,460 Q696,452 710,444 L710,379 Q710,370 701,370 L680,370" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M705,677 L715,663" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="670" y="646" fill="#192d40" text-anchor="end" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">17A / 8D / W</text>
+<path d="M750,452 L750,581 Q750,590 759,590 L1428,590 Q1437,590 1437,599 L1437,850" fill="none" stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M750,452 L750,581 Q750,590 759,590 L1428,590 Q1437,590 1437,599 L1437,850" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M1345,597 L1355,583" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="1360" y="615" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">8</text>
+<path d="M1162,590 L1162,755" fill="none" stroke="white" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1162,590 L1162,755" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M1157,667 L1167,653" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="1170" y="651" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">8</text>
+<text x="1260" y="570" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal">Shared read response; valid qualified by engine</text>
+<rect x="65" y="875" width="610" height="120" fill="#e9f3f0" stroke="#192d40" stroke-width="2" />
+<text x="370.0" y="931.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold">Layer / memory control FSM</text>
+<text x="370.0" y="960.0" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">GEMM, pool, shift read and class read arbitration</text>
+<path d="M675,930 L731,930 Q740,930 740,939 L740,1076 Q740,1085 749,1085 L2171,1085 Q2180,1085 2180,1076 L2180,454 Q2180,445 2171,445 L1965,445" fill="none" stroke="white" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M675,930 L731,930 Q740,930 740,939 L740,1076 Q740,1085 749,1085 L2171,1085 Q2180,1085 2180,1076 L2180,454 Q2180,445 2171,445 L1965,445" fill="none" stroke="#087f86" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrc)" stroke-dasharray="7 5" />
+<text x="1450" y="1114" fill="#087f86" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">Shared step / clear / sparse_en and engine start/done</text>
+<text x="65" y="818" fill="#657580" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">One outstanding ready/valid transaction</text>
+<path d="M48,1130 L2202,1130" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M55,1162 L115,1162" fill="none" stroke="#192d40" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="132" y="1169" fill="#657580" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">datapath bus</text>
+<path d="M325,1162 L390,1162" fill="none" stroke="#087f86" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrc)" stroke-dasharray="7 5" />
+<text x="407" y="1169" fill="#657580" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">control / enable</text>
+<text x="2202" y="1169" fill="#657580" text-anchor="end" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">FashionLeNet | RTL microarchitecture</text>
+<circle cx="750" cy="452" r="4" fill="#192d40" />
+<circle cx="1162" cy="590" r="4" fill="#192d40" />
+<path d="M1810,985 L1690,985" fill="none" stroke="#3d6f9a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrwrite)" /><path d="M640,1162 L705,1162" fill="none" stroke="#3d6f9a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" /><text x="723" y="1169" fill="#657580" font-family="DejaVu Sans,Arial,sans-serif" font-size="14">INT8 writeback</text></svg>
