@@ -1,0 +1,70 @@
+{
+  "input_size": 28,
+  "channels": [
+    6,
+    16,
+    120,
+    84
+  ],
+  "weight_bytes": 44190,
+  "bias_bytes": 944,
+  "parameter_payload_bytes": 45139,
+  "prediction": 9,
+  "logits": [
+    -20,
+    -34,
+    -35,
+    -36,
+    -48,
+    7,
+    -37,
+    17,
+    -11,
+    31
+  ],
+  "dense_macs": 281640,
+  "layers": [
+    {
+      "name": "conv1",
+      "M": 576,
+      "N": 6,
+      "K": 25,
+      "MACs": 86400
+    },
+    {
+      "name": "conv2",
+      "M": 64,
+      "N": 16,
+      "K": 150,
+      "MACs": 153600
+    },
+    {
+      "name": "conv3",
+      "M": 1,
+      "N": 120,
+      "K": 256,
+      "MACs": 30720
+    },
+    {
+      "name": "fc1",
+      "M": 1,
+      "N": 84,
+      "K": 120,
+      "MACs": 10080
+    },
+    {
+      "name": "fc2",
+      "M": 1,
+      "N": 10,
+      "K": 84,
+      "MACs": 840
+    }
+  ],
+  "provenance": {
+    "kind": "Fashion-MNIST_test",
+    "index": 0,
+    "label": 9
+  },
+  "memory_sha256": "20fe8ac971deb4b5aafc247ddefcd66c6198763b6f63679966c39545ae73ed93",
+  "arithmetic": "signed INT8, signed INT32 accumulation and bias; round ties away; saturating INT8"
+}
