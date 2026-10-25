@@ -1,0 +1,18 @@
+test_cache_conflict_and_coherence (test_reference.ReferenceTests.test_cache_conflict_and_coherence) ... ok
+test_export_layout_and_budget (test_reference.ReferenceTests.test_export_layout_and_budget) ... ok
+test_export_rejects_activation_bank_overflow (test_reference.ReferenceTests.test_export_rejects_activation_bank_overflow) ... ok
+test_pool_signed (test_reference.ReferenceTests.test_pool_signed) ... ok
+test_portable_model_round_trip (test_reference.ReferenceTests.test_portable_model_round_trip) ... ok
+test_pot_scales (test_reference.ReferenceTests.test_pot_scales) ... ok
+test_rounding_signed_extremes (test_reference.ReferenceTests.test_rounding_signed_extremes) ... ok
+test_scalar_convolution_oracle (test_reference.ReferenceTests.test_scalar_convolution_oracle) ... ok
+test_calibration_uses_integer_datapath (test_training.TrainingTests.test_calibration_uses_integer_datapath) ... ok
+test_numpy_float_matches_torch_both_geometries (test_training.TrainingTests.test_numpy_float_matches_torch_both_geometries) ... ok
+test_structural_surgery_all_requested_rates (test_training.TrainingTests.test_structural_surgery_all_requested_rates) ... ok
+test_unstructured_exact_count_and_bias_preservation (test_training.TrainingTests.test_unstructured_exact_count_and_bias_preservation) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 1.324s
+
+OK
+{"export": "/tmp/tmpj_p929b0", "prediction": 4, "dense_macs": 24802}

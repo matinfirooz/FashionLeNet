@@ -1,0 +1,353 @@
+{
+  "accuracy": [
+    [
+      "28 x 28",
+      "88.84%",
+      "88.79%",
+      10000
+    ],
+    [
+      "32 x 32",
+      "89.30%",
+      "89.03%",
+      10000
+    ]
+  ],
+  "rtl_unit_tests": [
+    {
+      "test": "tb_os_pe",
+      "status": "PASS",
+      "seconds": 0.03420229699986521
+    },
+    {
+      "test": "tb_skew_buffer",
+      "status": "PASS",
+      "seconds": 0.023350925000158895
+    },
+    {
+      "test": "tb_os_array",
+      "status": "PASS",
+      "seconds": 0.029804575000071054
+    },
+    {
+      "test": "tb_requantize",
+      "status": "PASS",
+      "seconds": 0.18874754299986307
+    },
+    {
+      "test": "tb_pool2x2",
+      "status": "PASS",
+      "seconds": 0.012866408000263618
+    },
+    {
+      "test": "tb_argmax10",
+      "status": "PASS",
+      "seconds": 0.0117387560003408
+    },
+    {
+      "test": "tb_backing_store",
+      "status": "PASS",
+      "seconds": 0.013857064000148966
+    },
+    {
+      "test": "tb_read_cache",
+      "status": "PASS",
+      "seconds": 0.07842249399982393
+    },
+    {
+      "test": "tb_gemm_engine",
+      "status": "PASS",
+      "seconds": 0.08860078899988366
+    },
+    {
+      "test": "tb_pool_engine",
+      "status": "PASS",
+      "seconds": 0.015746934000162582
+    },
+    {
+      "test": "tb_lenet_core",
+      "status": "PASS",
+      "seconds": 1.1329011259999788
+    }
+  ],
+  "full_system_cases": [
+    {
+      "status": "PASS",
+      "bundle": "examples/trained32_image1",
+      "rows": 5,
+      "cols": 5,
+      "sparse": 1,
+      "cache": 1,
+      "l2_latency": 4,
+      "cycles": 2249791,
+      "mac_attempted": 416520,
+      "mac_executed": 302578,
+      "cache_hits": 257967,
+      "cache_misses": 15902,
+      "cache_bypasses": 0,
+      "prediction": 2,
+      "stage_checks": 7,
+      "int32_checks": 6518,
+      "source": "results/regression_images/full_trained32_image1_r5c5_s1_c1_l4.json",
+      "provenance": {
+        "kind": "Fashion-MNIST_test",
+        "index": 1,
+        "label": 2
+      },
+      "model_matches_rtl": true,
+      "conditional_latency_ms_at_100MHz": 22.49791
+    },
+    {
+      "status": "PASS",
+      "bundle": "examples/trained32_image2",
+      "rows": 5,
+      "cols": 5,
+      "sparse": 1,
+      "cache": 1,
+      "l2_latency": 4,
+      "cycles": 2249791,
+      "mac_attempted": 416520,
+      "mac_executed": 240250,
+      "cache_hits": 257967,
+      "cache_misses": 15902,
+      "cache_bypasses": 0,
+      "prediction": 1,
+      "stage_checks": 7,
+      "int32_checks": 6518,
+      "source": "results/regression_images/full_trained32_image2_r5c5_s1_c1_l4.json",
+      "provenance": {
+        "kind": "Fashion-MNIST_test",
+        "index": 2,
+        "label": 1
+      },
+      "model_matches_rtl": true,
+      "conditional_latency_ms_at_100MHz": 22.49791
+    },
+    {
+      "status": "PASS",
+      "bundle": "examples/trained32_image8",
+      "rows": 5,
+      "cols": 5,
+      "sparse": 1,
+      "cache": 1,
+      "l2_latency": 4,
+      "cycles": 2249791,
+      "mac_attempted": 416520,
+      "mac_executed": 205831,
+      "cache_hits": 257967,
+      "cache_misses": 15902,
+      "cache_bypasses": 0,
+      "prediction": 5,
+      "stage_checks": 7,
+      "int32_checks": 6518,
+      "source": "results/regression_images/full_trained32_image8_r5c5_s1_c1_l4.json",
+      "provenance": {
+        "kind": "Fashion-MNIST_test",
+        "index": 8,
+        "label": 5
+      },
+      "model_matches_rtl": true,
+      "conditional_latency_ms_at_100MHz": 22.49791
+    },
+    {
+      "status": "PASS",
+      "bundle": "examples/trained28",
+      "rows": 5,
+      "cols": 5,
+      "sparse": 1,
+      "cache": 1,
+      "l2_latency": 4,
+      "cycles": 2901741,
+      "mac_attempted": 281640,
+      "mac_executed": 166921,
+      "cache_hits": 164079,
+      "cache_misses": 24984,
+      "cache_bypasses": 0,
+      "prediction": 9,
+      "stage_checks": 7,
+      "int32_checks": 4694,
+      "source": "results/verification/full_trained28_r5c5_s1_c1_l4.json",
+      "provenance": {
+        "kind": "Fashion-MNIST_test",
+        "index": 0,
+        "label": 9
+      },
+      "model_matches_rtl": true,
+      "conditional_latency_ms_at_100MHz": 29.01741
+    },
+    {
+      "status": "PASS",
+      "bundle": "examples/trained32",
+      "rows": 5,
+      "cols": 5,
+      "sparse": 0,
+      "cache": 0,
+      "l2_latency": 1,
+      "cycles": 1520524,
+      "mac_attempted": 416520,
+      "mac_executed": 416520,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "cache_bypasses": 273869,
+      "prediction": 9,
+      "stage_checks": 7,
+      "int32_checks": 6518,
+      "source": "results/verification/full_trained32_r5c5_s0_c0_l1.json",
+      "provenance": {
+        "kind": "Fashion-MNIST_test",
+        "index": 0,
+        "label": 9
+      },
+      "model_matches_rtl": true,
+      "conditional_latency_ms_at_100MHz": 15.20524
+    },
+    {
+      "status": "PASS",
+      "bundle": "examples/trained32",
+      "rows": 5,
+      "cols": 5,
+      "sparse": 0,
+      "cache": 1,
+      "l2_latency": 4,
+      "cycles": 2249791,
+      "mac_attempted": 416520,
+      "mac_executed": 416520,
+      "cache_hits": 257967,
+      "cache_misses": 15902,
+      "cache_bypasses": 0,
+      "prediction": 9,
+      "stage_checks": 7,
+      "int32_checks": 6518,
+      "source": "results/verification/full_trained32_r5c5_s0_c1_l4.json",
+      "provenance": {
+        "kind": "Fashion-MNIST_test",
+        "index": 0,
+        "label": 9
+      },
+      "model_matches_rtl": true,
+      "conditional_latency_ms_at_100MHz": 22.49791
+    },
+    {
+      "status": "PASS",
+      "bundle": "examples/trained32",
+      "rows": 5,
+      "cols": 5,
+      "sparse": 1,
+      "cache": 0,
+      "l2_latency": 4,
+      "cycles": 2366413,
+      "mac_attempted": 416520,
+      "mac_executed": 241553,
+      "cache_hits": 0,
+      "cache_misses": 0,
+      "cache_bypasses": 273869,
+      "prediction": 9,
+      "stage_checks": 7,
+      "int32_checks": 6518,
+      "source": "results/verification/full_trained32_r5c5_s1_c0_l4.json",
+      "provenance": {
+        "kind": "Fashion-MNIST_test",
+        "index": 0,
+        "label": 9
+      },
+      "model_matches_rtl": true,
+      "conditional_latency_ms_at_100MHz": 23.66413
+    },
+    {
+      "status": "PASS",
+      "bundle": "examples/trained32",
+      "rows": 5,
+      "cols": 5,
+      "sparse": 1,
+      "cache": 1,
+      "l2_latency": 4,
+      "cycles": 2249791,
+      "mac_attempted": 416520,
+      "mac_executed": 241553,
+      "cache_hits": 257967,
+      "cache_misses": 15902,
+      "cache_bypasses": 0,
+      "prediction": 9,
+      "stage_checks": 7,
+      "int32_checks": 6518,
+      "source": "results/verification/full_trained32_r5c5_s1_c1_l4.json",
+      "provenance": {
+        "kind": "Fashion-MNIST_test",
+        "index": 0,
+        "label": 9
+      },
+      "model_matches_rtl": true,
+      "conditional_latency_ms_at_100MHz": 22.49791
+    },
+    {
+      "status": "PASS",
+      "bundle": "examples/pruned28",
+      "rows": 5,
+      "cols": 5,
+      "sparse": 1,
+      "cache": 1,
+      "l2_latency": 4,
+      "cycles": 2901741,
+      "mac_attempted": 281640,
+      "mac_executed": 115342,
+      "cache_hits": 164079,
+      "cache_misses": 24984,
+      "cache_bypasses": 0,
+      "prediction": 9,
+      "stage_checks": 7,
+      "int32_checks": 4694,
+      "source": "results/verification_pruned/full_pruned28_r5c5_s1_c1_l4.json",
+      "provenance": {
+        "kind": "Fashion-MNIST_test",
+        "index": 0,
+        "label": 9
+      },
+      "model_matches_rtl": true,
+      "conditional_latency_ms_at_100MHz": 29.01741
+    },
+    {
+      "status": "PASS",
+      "bundle": "examples/structured28",
+      "rows": 5,
+      "cols": 5,
+      "sparse": 1,
+      "cache": 1,
+      "l2_latency": 4,
+      "cycles": 460561,
+      "mac_attempted": 92220,
+      "mac_executed": 53034,
+      "cache_hits": 62005,
+      "cache_misses": 2938,
+      "cache_bypasses": 0,
+      "prediction": 9,
+      "stage_checks": 7,
+      "int32_checks": 2352,
+      "source": "results/verification_structured/full_structured28_r5c5_s1_c1_l4.json",
+      "provenance": {
+        "kind": "Fashion-MNIST_test",
+        "index": 0,
+        "label": 9
+      },
+      "model_matches_rtl": true,
+      "conditional_latency_ms_at_100MHz": 4.60561
+    }
+  ],
+  "fpga": {
+    "status": "not_run",
+    "reason": "Vivado and a target FPGA board were unavailable in the build environment",
+    "default_part": "xc7a200tfbg484-2",
+    "target_clock_MHz": 100,
+    "achieved_clock_MHz": null,
+    "LUT": null,
+    "FF": null,
+    "DSP": null,
+    "BRAM": null,
+    "power_mW": null,
+    "routed_setup_slack_ns": null,
+    "routed_hold_slack_ns": null,
+    "activity_annotation_coverage_percent": null
+  },
+  "cpu_median_ms": 0.19278050000000002,
+  "training_test_protocol": "55000 fit / 5000 validation / 10000 official test",
+  "all_model_rtl_comparisons_passed": true
+}

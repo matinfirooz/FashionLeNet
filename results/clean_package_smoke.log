@@ -1,0 +1,72 @@
+
++ -m fashionlenet.cli demo
+{"export": "examples/demo", "prediction": 7, "dense_macs": 416520}
+
++ -m unittest discover -s tests -v
+test_cache_conflict_and_coherence (test_reference.ReferenceTests.test_cache_conflict_and_coherence) ... ok
+test_export_layout_and_budget (test_reference.ReferenceTests.test_export_layout_and_budget) ... ok
+test_export_rejects_activation_bank_overflow (test_reference.ReferenceTests.test_export_rejects_activation_bank_overflow) ... ok
+test_pool_signed (test_reference.ReferenceTests.test_pool_signed) ... ok
+test_portable_model_round_trip (test_reference.ReferenceTests.test_portable_model_round_trip) ... ok
+test_pot_scales (test_reference.ReferenceTests.test_pot_scales) ... ok
+test_rounding_signed_extremes (test_reference.ReferenceTests.test_rounding_signed_extremes) ... ok
+test_scalar_convolution_oracle (test_reference.ReferenceTests.test_scalar_convolution_oracle) ... ok
+test_calibration_uses_integer_datapath (test_training.TrainingTests.test_calibration_uses_integer_datapath) ... ok
+test_numpy_float_matches_torch_both_geometries (test_training.TrainingTests.test_numpy_float_matches_torch_both_geometries) ... ok
+test_structural_surgery_all_requested_rates (test_training.TrainingTests.test_structural_surgery_all_requested_rates) ... ok
+test_unstructured_exact_count_and_bias_preservation (test_training.TrainingTests.test_unstructured_exact_count_and_bias_preservation) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 1.316s
+
+OK
+{"export": "/tmp/tmpe_yzbmhq", "prediction": 4, "dense_macs": 24802}
+
++ scripts/run_rtl.py
+VCD info: dumpfile build/os_pe.vcd opened for output.
+PASS tb_os_pe: 800 transactions, signed extremes, sparse/dense, stalls, clear
+/workspace/scratch/578efbcf7f60/release_qa/FashionLeNet/tb/tb_os_pe.sv:34: $finish called at 8050000 (1ps)
+
+PASS tb_skew_buffer: token delays survive stalls
+/workspace/scratch/578efbcf7f60/release_qa/FashionLeNet/tb/tb_skew_buffer.sv:30: $finish called at 831000 (1ps)
+
+PASS tb_os_array: exact GEMM, signed, masked tails, stall/flush, dense/sparse
+/workspace/scratch/578efbcf7f60/release_qa/FashionLeNet/tb/tb_os_array.sv:44: $finish called at 600000 (1ps)
+
+PASS tb_requantize: 51392 exhaustive small/edge cases, all shifts
+/workspace/scratch/578efbcf7f60/release_qa/FashionLeNet/tb/tb_requantize.sv:24: $finish called at 51392000 (1ps)
+
+PASS tb_pool2x2
+/workspace/scratch/578efbcf7f60/release_qa/FashionLeNet/tb/tb_pool2x2.sv:13: $finish called at 512000 (1ps)
+
+PASS tb_argmax10
+/workspace/scratch/578efbcf7f60/release_qa/FashionLeNet/tb/tb_argmax10.sv:16: $finish called at 340000 (1ps)
+
+PASS tb_backing_store: exact latency, host load, write, held response
+/workspace/scratch/578efbcf7f60/release_qa/FashionLeNet/tb/tb_backing_store.sv:22: $finish called at 170000 (1ps)
+
+PASS tb_read_cache: hit, miss, conflict, full refill, write invalidation, bypass, stalls
+/workspace/scratch/578efbcf7f60/release_qa/FashionLeNet/tb/tb_read_cache.sv:36: $finish called at 4340000 (1ps)
+
+PASS tb_gemm_engine: multi-channel implicit im2col, rectangular/tail tiles, biases, sparse equality
+/workspace/scratch/578efbcf7f60/release_qa/FashionLeNet/tb/tb_gemm_engine.sv:39: $finish called at 69800000 (1ps)
+
+PASS tb_pool_engine: channels, signed pooling, memory latency
+/workspace/scratch/578efbcf7f60/release_qa/FashionLeNet/tb/tb_pool_engine.sv:20: $finish called at 3030000 (1ps)
+
+PASS tb_lenet_core: five layers, pools, config widths, all-zero tie inference
+/workspace/scratch/578efbcf7f60/release_qa/FashionLeNet/tb/tb_lenet_core.sv:17: $finish called at 1131550000 (1ps)
+
+
++ scripts/run_rtl.py --full --bundle examples/demo
+stage 1: 4704 INT8 outputs match
+stage 2: 1176 INT8 outputs match
+stage 3: 1600 INT8 outputs match
+stage 4: 400 INT8 outputs match
+stage 5: 120 INT8 outputs match
+stage 6: 84 INT8 outputs match
+stage 7: 10 INT8 outputs match
+PASS tb_fpga_top: cycles=2249791, executed=73629/416520, class=7, INT32 checks=6518
+/workspace/scratch/578efbcf7f60/release_qa/FashionLeNet/tb/tb_fpga_top.sv:92: $finish called at 23317151000 (1ps)
+
+Completed requested profile.

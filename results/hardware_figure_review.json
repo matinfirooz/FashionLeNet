@@ -1,0 +1,12 @@
+{
+  "schematics": 6,
+  "formats": [
+    "SVG",
+    "PNG"
+  ],
+  "svg_parse": "PASS",
+  "png_render": "PASS",
+  "RTL_source_cross_check": "PASS",
+  "software_source_cross_check": "PASS",
+  "documentation_links": "PASS"
+}

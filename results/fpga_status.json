@@ -1,0 +1,1 @@
+{"status":"not_run","reason":"Vivado and a target FPGA board were unavailable in the build environment","default_part":"xc7a200tfbg484-2","target_clock_MHz":100,"achieved_clock_MHz":null,"LUT":null,"FF":null,"DSP":null,"BRAM":null,"power_mW":null,"routed_setup_slack_ns":null,"routed_hold_slack_ns":null,"activity_annotation_coverage_percent":null}
