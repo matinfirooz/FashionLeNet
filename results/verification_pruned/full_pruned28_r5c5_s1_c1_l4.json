@@ -1,0 +1,1 @@
+{"status":"PASS","bundle":"examples/pruned28","rows":5,"cols":5,"sparse":1,"cache":1,"l2_latency":4,"cycles":2901741,"mac_attempted":281640,"mac_executed":115342,"cache_hits":164079,"cache_misses":24984,"cache_bypasses":0,"prediction":9,"stage_checks":7,"int32_checks":4694}
