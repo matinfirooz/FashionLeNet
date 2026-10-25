@@ -1,0 +1,2 @@
+PASS tb_argmax10
+/workspace/scratch/578efbcf7f60/FashionLeNet/tb/tb_argmax10.sv:16: $finish called at 340000 (1ps)

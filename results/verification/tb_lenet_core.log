@@ -1,0 +1,2 @@
+PASS tb_lenet_core: five layers, pools, config widths, all-zero tie inference
+/workspace/scratch/578efbcf7f60/FashionLeNet/tb/tb_lenet_core.sv:17: $finish called at 1131550000 (1ps)

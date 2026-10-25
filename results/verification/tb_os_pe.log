@@ -1,0 +1,3 @@
+VCD info: dumpfile build/os_pe.vcd opened for output.
+PASS tb_os_pe: 800 transactions, signed extremes, sparse/dense, stalls, clear
+/workspace/scratch/578efbcf7f60/FashionLeNet/tb/tb_os_pe.sv:34: $finish called at 8050000 (1ps)

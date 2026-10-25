@@ -1,0 +1,2 @@
+PASS tb_read_cache: hit, miss, conflict, full refill, write invalidation, bypass, stalls
+/workspace/scratch/578efbcf7f60/FashionLeNet/tb/tb_read_cache.sv:36: $finish called at 4340000 (1ps)

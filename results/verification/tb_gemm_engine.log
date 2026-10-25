@@ -1,0 +1,2 @@
+PASS tb_gemm_engine: multi-channel implicit im2col, rectangular/tail tiles, biases, sparse equality
+/workspace/scratch/578efbcf7f60/FashionLeNet/tb/tb_gemm_engine.sv:39: $finish called at 69800000 (1ps)

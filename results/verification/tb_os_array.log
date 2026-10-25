@@ -1,0 +1,2 @@
+PASS tb_os_array: exact GEMM, signed, masked tails, stall/flush, dense/sparse
+/workspace/scratch/578efbcf7f60/FashionLeNet/tb/tb_os_array.sv:44: $finish called at 600000 (1ps)

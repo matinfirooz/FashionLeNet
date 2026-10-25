@@ -1,0 +1,2 @@
+PASS tb_pool_engine: channels, signed pooling, memory latency
+/workspace/scratch/578efbcf7f60/FashionLeNet/tb/tb_pool_engine.sv:20: $finish called at 3030000 (1ps)

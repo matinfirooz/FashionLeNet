@@ -1,0 +1,2 @@
+PASS tb_pool2x2
+/workspace/scratch/578efbcf7f60/FashionLeNet/tb/tb_pool2x2.sv:13: $finish called at 512000 (1ps)

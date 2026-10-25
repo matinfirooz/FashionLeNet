@@ -1,0 +1,2 @@
+PASS tb_skew_buffer: token delays survive stalls
+/workspace/scratch/578efbcf7f60/FashionLeNet/tb/tb_skew_buffer.sv:30: $finish called at 831000 (1ps)

@@ -1,0 +1,60 @@
+{
+  "tool": "Icarus Verilog",
+  "tests": [
+    {
+      "test": "tb_os_pe",
+      "status": "PASS",
+      "seconds": 0.03420229699986521
+    },
+    {
+      "test": "tb_skew_buffer",
+      "status": "PASS",
+      "seconds": 0.023350925000158895
+    },
+    {
+      "test": "tb_os_array",
+      "status": "PASS",
+      "seconds": 0.029804575000071054
+    },
+    {
+      "test": "tb_requantize",
+      "status": "PASS",
+      "seconds": 0.18874754299986307
+    },
+    {
+      "test": "tb_pool2x2",
+      "status": "PASS",
+      "seconds": 0.012866408000263618
+    },
+    {
+      "test": "tb_argmax10",
+      "status": "PASS",
+      "seconds": 0.0117387560003408
+    },
+    {
+      "test": "tb_backing_store",
+      "status": "PASS",
+      "seconds": 0.013857064000148966
+    },
+    {
+      "test": "tb_read_cache",
+      "status": "PASS",
+      "seconds": 0.07842249399982393
+    },
+    {
+      "test": "tb_gemm_engine",
+      "status": "PASS",
+      "seconds": 0.08860078899988366
+    },
+    {
+      "test": "tb_pool_engine",
+      "status": "PASS",
+      "seconds": 0.015746934000162582
+    },
+    {
+      "test": "tb_lenet_core",
+      "status": "PASS",
+      "seconds": 1.1329011259999788
+    }
+  ]
+}

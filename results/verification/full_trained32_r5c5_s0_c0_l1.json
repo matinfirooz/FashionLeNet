@@ -1,0 +1,1 @@
+{"status":"PASS","bundle":"examples/trained32","rows":5,"cols":5,"sparse":0,"cache":0,"l2_latency":1,"cycles":1520524,"mac_attempted":416520,"mac_executed":416520,"cache_hits":0,"cache_misses":0,"cache_bypasses":273869,"prediction":9,"stage_checks":7,"int32_checks":6518}

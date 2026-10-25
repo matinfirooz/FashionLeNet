@@ -1,0 +1,2 @@
+PASS tb_requantize: 51392 exhaustive small/edge cases, all shifts
+/workspace/scratch/578efbcf7f60/FashionLeNet/tb/tb_requantize.sv:24: $finish called at 51392000 (1ps)
