@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+build/
+data/
+*.vvp
+*.jou
+*.str
+*.zip
+.Xil/
+results/vivado/
+results/activity/
+.ipynb_checkpoints/
+*.egg-info/
