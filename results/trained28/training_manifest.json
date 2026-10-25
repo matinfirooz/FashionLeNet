@@ -1,0 +1,19 @@
+{
+  "seed": 42,
+  "epochs": 15,
+  "batch_size": 128,
+  "lr": 0.001,
+  "threads": 4,
+  "torch": "2.14.1+cpu",
+  "python": "3.12.14",
+  "input_size": 28,
+  "channels": [
+    6,
+    16,
+    120,
+    84
+  ],
+  "training_samples": 55000,
+  "best_validation_accuracy": 0.8944,
+  "test_used_for_selection": false
+}
