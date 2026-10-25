@@ -1,0 +1,1 @@
+{"status":"PASS","bundle":"examples/structured28","rows":5,"cols":5,"sparse":1,"cache":1,"l2_latency":4,"cycles":460561,"mac_attempted":92220,"mac_executed":53034,"cache_hits":62005,"cache_misses":2938,"cache_bypasses":0,"prediction":9,"stage_checks":7,"int32_checks":2352}
