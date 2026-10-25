@@ -1,6 +1,6 @@
 # Memory map and ready/valid protocol
 
-![Memory](figures/memory_hierarchy.svg)
+![Memory](figures/memory-hierarchy.svg)
 
 | Byte address | Length | Meaning |
 |---|---:|---|
