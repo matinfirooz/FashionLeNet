@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="740" viewBox="0 0 1280 740">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#19324b"/></marker></defs>
+<rect width="1280" height="100%" fill="white"/>
+<text x="44" y="35" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#007f86" text-anchor="start" font-weight="bold">FASHIONLENET  /  HARDWARE LAB</text>
+<text x="44" y="79" font-family="DejaVu Sans,Arial,sans-serif" font-size="30" fill="#19324b" text-anchor="start" font-weight="bold">LeNet geometry and hardware mapping</text>
+<text x="44" y="110" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#607286" text-anchor="start" font-weight="normal">32 x 32 input uses 2-pixel zero padding around each original 28 x 28 Fashion-MNIST image.</text>
+<path d="M44 134H1236" fill="none" stroke="#cbd7e2" stroke-width="1" stroke-linejoin="round"/>
+<rect x="44" y="184" width="265" height="157" rx="8" fill="#f3f7fa" stroke="#cbd7e2" stroke-width="1.5"/>
+<path d="M54 184H299" stroke="#007f86" stroke-width="4"/>
+<text x="60" y="216" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#19324b" text-anchor="start" font-weight="bold">Input</text>
+<text x="60" y="245" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#607286" text-anchor="start" font-weight="normal">1 x 32 x 32</text>
+<text x="60" y="268" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#607286" text-anchor="start" font-weight="normal">Raw pixels / 255</text>
+<text x="60" y="291" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#607286" text-anchor="start" font-weight="normal">INT8 scale = 1/128</text>
+<rect x="353" y="184" width="265" height="157" rx="8" fill="#f3f7fa" stroke="#cbd7e2" stroke-width="1.5"/>
+<path d="M363 184H608" stroke="#7160a4" stroke-width="4"/>
+<text x="369" y="216" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#19324b" text-anchor="start" font-weight="bold">Conv1 + ReLU</text>
+<text x="369" y="245" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#607286" text-anchor="start" font-weight="normal">6 x 28 x 28</text>
+<text x="369" y="268" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#607286" text-anchor="start" font-weight="normal">6 filters / 5 x 5</text>
+<text x="369" y="291" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#607286" text-anchor="start" font-weight="normal">117,600 MACs</text>
+<rect x="662" y="184" width="265" height="157" rx="8" fill="#f3f7fa" stroke="#cbd7e2" stroke-width="1.5"/>
+<path d="M672 184H917" stroke="#bd761c" stroke-width="4"/>
+<text x="678" y="216" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#19324b" text-anchor="start" font-weight="bold">Max pool 1</text>
+<text x="678" y="245" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#607286" text-anchor="start" font-weight="normal">6 x 14 x 14</text>
+<text x="678" y="268" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#607286" text-anchor="start" font-weight="normal">2 x 2 / stride 2</text>
+<text x="678" y="291" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#607286" text-anchor="start" font-weight="normal">No multiplications</text>
+<rect x="971" y="184" width="265" height="157" rx="8" fill="#f3f7fa" stroke="#cbd7e2" stroke-width="1.5"/>
+<path d="M981 184H1226" stroke="#7160a4" stroke-width="4"/>
+<text x="987" y="216" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#19324b" text-anchor="start" font-weight="bold">Conv2 + ReLU</text>
+<text x="987" y="245" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#607286" text-anchor="start" font-weight="normal">16 x 10 x 10</text>
+<text x="987" y="268" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#607286" text-anchor="start" font-weight="normal">16 filters / 5 x 5</text>
+<text x="987" y="291" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#607286" text-anchor="start" font-weight="normal">240,000 MACs</text>
+<path d="M309 259h44" fill="none" stroke="#19324b" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M618 259h44" fill="none" stroke="#19324b" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M927 259h44" fill="none" stroke="#19324b" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="44" y="433" width="265" height="157" rx="8" fill="#f3f7fa" stroke="#cbd7e2" stroke-width="1.5"/>
+<path d="M54 433H299" stroke="#bd761c" stroke-width="4"/>
+<text x="60" y="465" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#19324b" text-anchor="start" font-weight="bold">Max pool 2</text>
+<text x="60" y="494" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#607286" text-anchor="start" font-weight="normal">16 x 5 x 5</text>
+<text x="60" y="517" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#607286" text-anchor="start" font-weight="normal">2 x 2 / stride 2</text>
+<text x="60" y="540" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#607286" text-anchor="start" font-weight="normal">No multiplications</text>
+<rect x="353" y="433" width="265" height="157" rx="8" fill="#f3f7fa" stroke="#cbd7e2" stroke-width="1.5"/>
+<path d="M363 433H608" stroke="#7160a4" stroke-width="4"/>
+<text x="369" y="465" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#19324b" text-anchor="start" font-weight="bold">Conv3 + ReLU</text>
+<text x="369" y="494" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#607286" text-anchor="start" font-weight="normal">120 x 1 x 1</text>
+<text x="369" y="517" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#607286" text-anchor="start" font-weight="normal">120 filters / 5 x 5</text>
+<text x="369" y="540" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#607286" text-anchor="start" font-weight="normal">48,000 MACs</text>
+<rect x="662" y="433" width="265" height="157" rx="8" fill="#f3f7fa" stroke="#cbd7e2" stroke-width="1.5"/>
+<path d="M672 433H917" stroke="#7160a4" stroke-width="4"/>
+<text x="678" y="465" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#19324b" text-anchor="start" font-weight="bold">FC1 + ReLU</text>
+<text x="678" y="494" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#607286" text-anchor="start" font-weight="normal">120 -&gt; 84</text>
+<text x="678" y="517" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#607286" text-anchor="start" font-weight="normal">84 x 120 weights</text>
+<text x="678" y="540" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#607286" text-anchor="start" font-weight="normal">10,080 MACs</text>
+<rect x="971" y="433" width="265" height="157" rx="8" fill="#f3f7fa" stroke="#cbd7e2" stroke-width="1.5"/>
+<path d="M981 433H1226" stroke="#007f86" stroke-width="4"/>
+<text x="987" y="465" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#19324b" text-anchor="start" font-weight="bold">FC2 + argmax</text>
+<text x="987" y="494" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#607286" text-anchor="start" font-weight="normal">84 -&gt; 10 classes</text>
+<text x="987" y="517" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#607286" text-anchor="start" font-weight="normal">Signed INT8 logits</text>
+<text x="987" y="540" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#607286" text-anchor="start" font-weight="normal">840 MACs</text>
+<path d="M309 508h44" fill="none" stroke="#19324b" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M618 508h44" fill="none" stroke="#19324b" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M927 508h44" fill="none" stroke="#19324b" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M1103 341V383H176V433" fill="none" stroke="#19324b" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="44" y="645" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#19324b" text-anchor="start" font-weight="bold">32 x 32: 61,706 trainable parameters; 416,520 MACs per image.</text>
+<text x="44" y="674" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" fill="#607286" text-anchor="start" font-weight="normal">28 x 28 variant: 24 -&gt; 12 -&gt; 8 -&gt; 4 spatial sizes; Conv3 uses a 4 x 4 kernel.</text>
+<text x="44" y="716" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#607286" text-anchor="start" font-weight="normal">INT8 operands  /  INT32 local sums  /  synchronous ready-valid interface</text>
+</svg>

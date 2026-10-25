@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1870" height="1190" viewBox="0 0 1870 1190">
+<defs><marker id="arrd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#192d40"/></marker><marker id="arrc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#087f86"/></marker><marker id="arrg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#657580"/></marker></defs>
+<rect width="1870" height="1190" fill="white"/>
+<text x="48" y="48" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="31" font-weight="bold">Layer controller: actual RTL state transitions</text>
+<text x="48" y="80" fill="#657580" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal">States and guards are taken from lenet_core.sv. Unlabeled sequential transitions occur on the next clock.</text>
+<path d="M48,105 L1822,105" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter"/>
+<rect x="55" y="190" width="240" height="90" fill="#e9f3f0" stroke="#192d40" stroke-width="2"/>
+<text x="175.0" y="231.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold">IDLE</text>
+<text x="175.0" y="260.0" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">start: layer &lt;- 0</text>
+<rect x="410" y="190" width="240" height="90" fill="#ffffff" stroke="#192d40" stroke-width="2"/>
+<text x="530.0" y="231.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold">SHIFT_REQ</text>
+<text x="530.0" y="260.0" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">req_addr = 65520+layer</text>
+<rect x="765" y="190" width="240" height="90" fill="#ffffff" stroke="#192d40" stroke-width="2"/>
+<text x="885.0" y="231.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold">SHIFT_WAIT</text>
+<text x="885.0" y="260.0" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">latch 6-bit shift</text>
+<rect x="1120" y="190" width="240" height="90" fill="#e9f3f0" stroke="#192d40" stroke-width="2"/>
+<text x="1240.0" y="231.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold">GSTART</text>
+<text x="1240.0" y="260.0" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">gemm.start = 1</text>
+<rect x="1475" y="190" width="240" height="90" fill="#ffffff" stroke="#192d40" stroke-width="2"/>
+<text x="1595.0" y="231.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold">GWAIT</text>
+<text x="1595.0" y="260.0" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">wait for gdone</text>
+<path d="M295,235 L410,235" fill="none" stroke="#192d40" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrd)"/>
+<path d="M650,235 L765,235" fill="none" stroke="#192d40" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrd)"/>
+<path d="M1005,235 L1120,235" fill="none" stroke="#192d40" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrd)"/>
+<path d="M1360,235 L1475,235" fill="none" stroke="#192d40" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrd)"/>
+<text x="348" y="220" fill="#087f86" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal">start</text>
+<text x="705" y="220" fill="#087f86" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal">req_ready</text>
+<text x="1062" y="220" fill="#087f86" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal">rsp_valid</text>
+<rect x="1475" y="455" width="240" height="90" fill="#e9f3f0" stroke="#192d40" stroke-width="2"/>
+<text x="1595.0" y="496.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold">PSTART</text>
+<text x="1595.0" y="525.0" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">pool.start = 1</text>
+<rect x="1120" y="455" width="240" height="90" fill="#ffffff" stroke="#192d40" stroke-width="2"/>
+<text x="1240.0" y="496.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold">PWAIT</text>
+<text x="1240.0" y="525.0" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">wait for pdone</text>
+<path d="M1595,280 L1595,455" fill="none" stroke="#192d40" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrd)"/>
+<text x="1573" y="400" fill="#087f86" text-anchor="end" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">gdone &amp; layer&lt;2</text>
+<path d="M1475,500 L1360,500" fill="none" stroke="#192d40" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrd)"/>
+<path d="M1120,500 L530,500 L530,280" fill="none" stroke="#192d40" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrd)"/>
+<text x="790" y="482" fill="#087f86" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal">pdone: layer &lt;- layer+1</text>
+<path d="M1715,235 L1798,235 L1798,350 L530,350 L530,280" fill="none" stroke="#192d40" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrd)"/>
+<text x="1110" y="335" fill="#087f86" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal">gdone &amp; (layer=2 or 3): layer &lt;- layer+1</text>
+<rect x="1475" y="750" width="240" height="90" fill="#e9f3f0" stroke="#192d40" stroke-width="2"/>
+<text x="1595.0" y="791.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold">ARG_START</text>
+<text x="1595.0" y="820.0" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">arg_index &lt;- 0</text>
+<rect x="1120" y="750" width="240" height="90" fill="#ffffff" stroke="#192d40" stroke-width="2"/>
+<text x="1240.0" y="791.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold">ARG_REQ</text>
+<text x="1240.0" y="820.0" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">read logit[arg_index]</text>
+<rect x="765" y="750" width="240" height="90" fill="#ffffff" stroke="#192d40" stroke-width="2"/>
+<text x="885.0" y="791.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold">ARG_WAIT</text>
+<text x="885.0" y="820.0" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">feed argmax.valid</text>
+<rect x="410" y="750" width="240" height="90" fill="#ffffff" stroke="#192d40" stroke-width="2"/>
+<text x="530.0" y="791.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold">ARG_DONE</text>
+<text x="530.0" y="820.0" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">wait for adone</text>
+<path d="M1715,260 L1755,260 L1755,795 L1715,795" fill="none" stroke="#192d40" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrd)"/>
+<text x="1737" y="661" fill="#087f86" text-anchor="end" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">gdone</text>
+<text x="1737" y="685" fill="#087f86" text-anchor="end" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">layer=4</text>
+<path d="M1475,795 L1360,795" fill="none" stroke="#192d40" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrd)"/>
+<path d="M1120,795 L1005,795" fill="none" stroke="#192d40" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrd)"/>
+<path d="M765,795 L650,795" fill="none" stroke="#192d40" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrd)"/>
+<text x="1062" y="778" fill="#087f86" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal">req_ready</text>
+<text x="707" y="864" fill="#087f86" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">rsp_valid &amp; index=9</text>
+<path d="M885,840 L885,930 L1240,930 L1240,840" fill="none" stroke="#192d40" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrd)"/>
+<text x="1060" y="960" fill="#087f86" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">rsp_valid &amp; index&lt;9: index++</text>
+<path d="M530,840 L530,1035 L175,1035 L175,280" fill="none" stroke="#192d40" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrd)"/>
+<text x="340" y="1066" fill="#087f86" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal">adone: busy &lt;- 0; done &lt;- 1</text>
+<text x="410" y="590" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="bold">Engine selection</text>
+<text x="410" y="625" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="normal">GWAIT: GEMM owns req/rsp</text>
+<text x="410" y="658" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="normal">PWAIT: pool owns req/rsp</text>
+<text x="410" y="691" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="normal">SHIFT / ARG: controller owns req/rsp</text>
+<path d="M48,1120 L1822,1120" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter"/>
+<path d="M55,1152 L115,1152" fill="none" stroke="#192d40" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter"/>
+<text x="132" y="1159" fill="#657580" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">datapath bus</text>
+<path d="M325,1152 L390,1152" fill="none" stroke="#087f86" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrc)" stroke-dasharray="7 5"/>
+<text x="407" y="1159" fill="#657580" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">control / enable</text>
+<text x="1822" y="1159" fill="#657580" text-anchor="end" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">FashionLeNet | RTL microarchitecture</text>
+</svg>

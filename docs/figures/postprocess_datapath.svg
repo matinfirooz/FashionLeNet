@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1960" height="1070" viewBox="0 0 1960 1070">
+<defs><marker id="arrd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#192d40"/></marker><marker id="arrc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#087f86"/></marker><marker id="arrg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#657580"/></marker></defs>
+<rect width="1960" height="1070" fill="white"/>
+<text x="48" y="48" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="31" font-weight="bold">Bias, rounding and saturation: the integer output datapath</text>
+<text x="48" y="80" fill="#657580" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal">Combinational requantization follows a completed INT32 dot product. Magnitude arithmetic is 33 bits, including abs(INT32_MIN).</text>
+<path d="M48,105 L1912,105" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter"/>
+<text x="55" y="230" fill="#192d40" text-anchor="start" font-family="DejaVu Sans Mono,monospace" font-size="20" font-weight="bold">selected_sum[31:0]</text>
+<path d="M55,258 L310,258" fill="none" stroke="#192d40" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrd)"/>
+<path d="M200,265 L210,251" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter"/>
+<text x="213" y="249" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">32</text>
+<circle cx="350" cy="258" r="40" fill="white" stroke="#192d40" stroke-width="2.3"/>
+<text x="350" y="268" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="30" font-weight="normal">+</text>
+<rect x="90" y="425" width="230" height="110" fill="#eaf2f8" stroke="#192d40" stroke-width="2"/>
+<text x="102" y="449" fill="#657580" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">D</text>
+<text x="308" y="449" fill="#657580" text-anchor="end" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">Q</text>
+<text x="205.0" y="482.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="bold">BIAS</text>
+<text x="205.0" y="504.0" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal">32b</text>
+<path d="M90,510 L102,518 L90,526" fill="none" stroke="#192d40" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter"/>
+<text x="205.0" y="528" fill="#087f86" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" font-weight="normal">EN: BIAS_WAIT</text>
+<text x="90" y="581" fill="#657580" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">Four little-endian byte reads</text>
+<path d="M205,425 L205,370 L350,370 L350,298" fill="none" stroke="#192d40" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrd)"/>
+<path d="M277,377 L287,363" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter"/>
+<text x="290" y="361" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">32</text>
+<rect x="465" y="210" width="220" height="95" fill="#ffffff" stroke="#192d40" stroke-width="2"/>
+<text x="575.0" y="253.5" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold">ABS / sign</text>
+<text x="575.0" y="282.5" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">signed 32 -&gt; mag 33</text>
+<path d="M390,258 L465,258" fill="none" stroke="#192d40" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrd)"/>
+<path d="M422,265 L432,251" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter"/>
+<text x="435" y="249" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">32</text>
+<path d="M685,258 L780,258" fill="none" stroke="#192d40" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrd)"/>
+<path d="M730,265 L740,251" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter"/>
+<text x="743" y="249" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">33</text>
+<circle cx="820" cy="258" r="40" fill="white" stroke="#192d40" stroke-width="2.3"/>
+<text x="820" y="268" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="30" font-weight="normal">+</text>
+<rect x="700" y="450" width="245" height="120" fill="#faf3e7" stroke="#192d40" stroke-width="2"/>
+<text x="822.5" y="506.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="bold">Round constant</text>
+<text x="822.5" y="535.0" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">shift=0 ? 0 : 1&lt;&lt;(shift-1)</text>
+<path d="M820,450 L820,298" fill="none" stroke="#192d40" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrd)"/>
+<path d="M815,372 L825,358" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter"/>
+<text x="828" y="356" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">33</text>
+<rect x="955" y="210" width="230" height="95" fill="#ffffff" stroke="#192d40" stroke-width="2"/>
+<text x="1070.0" y="253.5" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold">Barrel shift</text>
+<text x="1070.0" y="282.5" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">&gt;&gt; shift[5:0]</text>
+<path d="M860,258 L955,258" fill="none" stroke="#192d40" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrd)"/>
+<path d="M903,265 L913,251" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter"/>
+<text x="916" y="249" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">33</text>
+<rect x="1280" y="210" width="225" height="95" fill="#ffffff" stroke="#192d40" stroke-width="2"/>
+<text x="1392.5" y="253.5" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold">Restore sign</text>
+<text x="1392.5" y="282.5" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">signed 33b</text>
+<path d="M1185,258 L1280,258" fill="none" stroke="#192d40" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrd)"/>
+<path d="M1225,265 L1235,251" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter"/>
+<text x="1238" y="249" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">33</text>
+<path d="M575,305 L575,365 L1392,365 L1392,305" fill="none" stroke="#087f86" stroke-width="1.8" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrc)" stroke-dasharray="7 5"/>
+<text x="1080" y="392" fill="#087f86" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">saved sign bit</text>
+<rect x="1590" y="188" width="290" height="140" fill="#faf3e7" stroke="#192d40" stroke-width="2"/>
+<text x="1735.0" y="254.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="bold">Clip / ReLU</text>
+<text x="1735.0" y="283.0" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">[-128,127] or [0,127]</text>
+<path d="M1505,258 L1590,258" fill="none" stroke="#192d40" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrd)"/>
+<path d="M1542,265 L1552,251" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter"/>
+<text x="1555" y="249" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">33</text>
+<path d="M1735,328 L1735,695 L1875,695" fill="none" stroke="#192d40" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrd)"/>
+<path d="M1730,487 L1740,473" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter"/>
+<text x="1743" y="471" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">8</text>
+<text x="1815" y="662" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans Mono,monospace" font-size="18" font-weight="normal">req_data[7:0]</text>
+<text x="1815" y="735" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="bold">INT8 writeback</text>
+<rect x="1040" y="665" width="230" height="110" fill="#eaf2f8" stroke="#192d40" stroke-width="2"/>
+<text x="1052" y="689" fill="#657580" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">D</text>
+<text x="1258" y="689" fill="#657580" text-anchor="end" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">Q</text>
+<text x="1155.0" y="722.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="bold">SHIFT</text>
+<text x="1155.0" y="744.0" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal">6b</text>
+<path d="M1040,750 L1052,758 L1040,766" fill="none" stroke="#192d40" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter"/>
+<text x="1155.0" y="768" fill="#087f86" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" font-weight="normal">EN: SHIFT_WAIT</text>
+<text x="1040" y="820" fill="#657580" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">One scale setting per layer</text>
+<path d="M1155,665 L1155,585 L1070,585 L1070,305" fill="none" stroke="#087f86" stroke-width="1.7" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrc)" stroke-dasharray="7 5"/>
+<path d="M1155,585 L820,585 L820,570" fill="none" stroke="#087f86" stroke-width="1.7" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrc)" stroke-dasharray="7 5"/>
+<circle cx="1155" cy="585" r="4" fill="#087f86"/>
+<text x="1345" y="535" fill="#087f86" text-anchor="start" font-family="DejaVu Sans Mono,monospace" font-size="18" font-weight="normal">relu = (layer != 4)</text>
+<path d="M1570,530 L1640,530 L1640,328" fill="none" stroke="#087f86" stroke-width="1.7" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrc)" stroke-dasharray="7 5"/>
+<text x="55" y="910" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="bold">Rounding: nearest with ties away from zero. Bias is added once, after the full reduction.</text>
+<text x="55" y="947" fill="#657580" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="normal">No floating-point multiply, divide, exponent or softmax is used in this output path.</text>
+<path d="M48,1000 L1912,1000" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter"/>
+<path d="M55,1032 L115,1032" fill="none" stroke="#192d40" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter"/>
+<text x="132" y="1039" fill="#657580" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">datapath bus</text>
+<path d="M325,1032 L390,1032" fill="none" stroke="#087f86" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrc)" stroke-dasharray="7 5"/>
+<text x="407" y="1039" fill="#657580" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">control / enable</text>
+<text x="1912" y="1039" fill="#657580" text-anchor="end" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">FashionLeNet | RTL microarchitecture</text>
+</svg>

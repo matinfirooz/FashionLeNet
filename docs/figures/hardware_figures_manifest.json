@@ -1,0 +1,47 @@
+{
+  "style": "RTL circuit schematics",
+  "figures": [
+    {
+      "file": "architecture",
+      "width": 2110,
+      "height": 1150,
+      "text_elements": 103,
+      "svg_sha256": "e4749c63df89214a633669887db0c9019bf2ea3d2ef1d9a5cfe7e335a323f478"
+    },
+    {
+      "file": "processing_element",
+      "width": 1800,
+      "height": 1110,
+      "text_elements": 66,
+      "svg_sha256": "df11ad7911f6eef04ab16a2f9efd7f948e5db9659ae3c58b1bc92f5a127595ef"
+    },
+    {
+      "file": "systolic_array",
+      "width": 1740,
+      "height": 1320,
+      "text_elements": 199,
+      "svg_sha256": "31fdc69b65dce94dbf5da4593daa3cac959f7d462b757d9a9d340f3078ce3db3"
+    },
+    {
+      "file": "memory_hierarchy",
+      "width": 1840,
+      "height": 1190,
+      "text_elements": 61,
+      "svg_sha256": "bc439fa188e4a2da4f41df41f5c9cbc81979a7bd1a01757e068779fe0d08997f"
+    },
+    {
+      "file": "postprocess_datapath",
+      "width": 1960,
+      "height": 1070,
+      "text_elements": 45,
+      "svg_sha256": "fa77ab705790da55682c5a751ed2575b2101afe2901f6d0759819abb1f442142"
+    },
+    {
+      "file": "controller_fsm",
+      "width": 1870,
+      "height": 1190,
+      "text_elements": 43,
+      "svg_sha256": "079c7ec684d6c155cf005d7973550f98e226379eaadf6831dfa333a3e736c993"
+    }
+  ]
+}
