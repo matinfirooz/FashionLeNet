@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "flow": "Yosys proc/opt/memory_collect/check -assert",
+  "top": "os_array",
+  "technology_mapped": false,
+  "num_generic_cells": 573,
+  "cell_types": {
+    "$add": 73,
+    "$logic_and": 125,
+    "$logic_not": 50,
+    "$logic_or": 50,
+    "$mul": 25,
+    "$mux": 50,
+    "$reduce_and": 25,
+    "$reduce_bool": 50,
+    "$sdffe": 125
+  },
+  "LUT": null,
+  "FF": null,
+  "DSP": null,
+  "BRAM": null,
+  "routed_frequency_MHz": null,
+  "power_mW": null
+}
