@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1840" height="1190" viewBox="0 0 1840 1190">
+<defs><marker id="arrd" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9.5" markerHeight="8.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse" overflow="visible"><path d="M0 0L10 5L0 10z" fill="#192d40" /></marker><marker id="arrc" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9.5" markerHeight="8.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse" overflow="visible"><path d="M0 0L10 5L0 10z" fill="#087f86" /></marker><marker id="arrg" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9.5" markerHeight="8.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse" overflow="visible"><path d="M0 0L10 5L0 10z" fill="#657580" /></marker><marker id="arrblue" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9.5" markerHeight="8.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse" overflow="visible"><path d="M0 0L10 5L0 10z" fill="#3d6f9a" /></marker></defs>
+<rect width="1840" height="1190" fill="white" />
+<path d="M48,105 L1792,105" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
+<rect x="55" y="185" width="430" height="68" fill="#eaf2f8" stroke="#192d40" stroke-width="2" />
+<rect x="485" y="185" width="390" height="68" fill="#eaf2f8" stroke="#192d40" stroke-width="2" />
+<rect x="875" y="185" width="270" height="68" fill="#eaf2f8" stroke="#192d40" stroke-width="2" />
+<rect x="440" y="345" width="240" height="150" fill="#e9f3f0" stroke="#192d40" stroke-width="2" />
+<path d="M453,345 L453,495" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M667,345 L667,495" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M453,396.0 L667,396.0" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
+<rect x="440" y="550" width="240" height="150" fill="#e9f3f0" stroke="#192d40" stroke-width="2" />
+<path d="M453,550 L453,700" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M667,550 L667,700" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M453,601.0 L667,601.0" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
+<rect x="890" y="345" width="310" height="225" fill="#e9f3f0" stroke="#192d40" stroke-width="2" />
+<path d="M903,345 L903,570" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M1187,345 L1187,570" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M903,396.0 L1187,396.0" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M903,471.0 L1187,471.0" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
+<rect x="960" y="280" width="100" height="55" fill="#ffffff" stroke="#192d40" stroke-width="2" />
+<rect x="750" y="390" width="85" height="75" fill="#ffffff" stroke="#192d40" stroke-width="2" />
+<rect x="770" y="605" width="120" height="65" fill="#ffffff" stroke="#192d40" stroke-width="2" />
+<rect x="1380" y="417" width="220" height="105" fill="#eaf2f8" stroke="#192d40" stroke-width="2" />
+<path d="M1380,497 L1392,505 L1380,513" fill="none" stroke="#192d40" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" />
+<polygon points="1250,390 1330,407 1330,533 1250,550" fill="#faf3e7" stroke="#192d40" stroke-width="2" />
+<rect x="1395" y="685" width="345" height="260" fill="#e9f3f0" stroke="#192d40" stroke-width="2" />
+<path d="M1408,685 L1408,945" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M1727,685 L1727,945" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M1408,736.0 L1727,736.0" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M1408,797.6666666666666 L1727,797.6666666666666" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M1408,859.3333333333334 L1727,859.3333333333334" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
+<rect x="765" y="805" width="430" height="155" fill="#e9f3f0" stroke="#192d40" stroke-width="2" />
+<rect x="55" y="825" width="560" height="135" fill="#faf3e7" stroke="#192d40" stroke-width="2" />
+<path d="M48,1120 L1792,1120" fill="none" stroke="#c5d0d7" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M55,1152 L115,1152" fill="none" stroke="#192d40" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M325,1152 L390,1152" fill="none" stroke="#087f86" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrc)" stroke-dasharray="7 5" />
+<path d="M200,253 L200,387 Q200,395 208,395 L440,395" fill="none" stroke="white" stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M200,253 L200,387 Q200,395 208,395 L440,395" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M820,253 L820,300 Q820,308 828,308 L960,308" fill="none" stroke="white" stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M820,253 L820,300 Q820,308 828,308 L960,308" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M1010,253 L1010,280" fill="none" stroke="white" stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1010,253 L1010,280" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M1060,308 L1122,308 Q1130,308 1130,316 L1130,345" fill="none" stroke="white" stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1060,308 L1122,308 Q1130,308 1130,316 L1130,345" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M680,420 L750,420" fill="none" stroke="white" stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M680,420 L750,420" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M270,253 L270,277 Q270,285 278,285 L784,285 Q792,285 792,293 L792,390" fill="none" stroke="white" stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M270,253 L270,277 Q270,285 278,285 L784,285 Q792,285 792,293 L792,390" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M1200,430 L1250,430" fill="none" stroke="white" stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1200,430 L1250,430" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M1330,470 L1380,470" fill="none" stroke="white" stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1330,470 L1380,470" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M1600,470 L1775,470" fill="none" stroke="white" stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1600,470 L1775,470" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M1395,785 L1228,785 Q1220,785 1220,777 L1220,518 Q1220,510 1228,510 L1250,510" fill="none" stroke="white" stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1395,785 L1228,785 Q1220,785 1220,777 L1220,518 Q1220,510 1228,510 L1250,510" fill="none" stroke="#3d6f9a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrblue)" />
+<path d="M1220,730 L1108,730 Q1100,730 1100,722 L1100,570" fill="none" stroke="white" stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1220,730 L1108,730 Q1100,730 1100,722 L1100,570" fill="none" stroke="#3d6f9a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrblue)" />
+<path d="M1195,865 L1395,865" fill="none" stroke="white" stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1195,865 L1395,865" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M680,253 L680,277 Q694,285 680,293 L680,302 Q680,310 672,310 L558,310 Q550,310 550,318 L550,345" fill="none" stroke="white" stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M680,253 L680,277 Q694,285 680,293 L680,302 Q680,310 672,310 L558,310 Q550,310 550,318 L550,345" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M680,310 L697,310 Q705,310 705,318 L705,412 Q719,420 705,428 L705,592 Q705,600 697,600 L680,600" fill="none" stroke="white" stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M680,310 L697,310 Q705,310 705,318 L705,412 Q719,420 705,428 L705,592 Q705,600 697,600 L680,600" fill="none" stroke="#192d40" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrd)" />
+<path d="M792,465 L792,605" fill="none" stroke="white" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M792,465 L792,605" fill="none" stroke="#087f86" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrc)" stroke-dasharray="6 4" />
+<path d="M680,635 L770,635" fill="none" stroke="white" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M680,635 L770,635" fill="none" stroke="#087f86" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrc)" stroke-dasharray="6 4" />
+<path d="M890,637 L954,637 Q962,637 962,645 L962,805" fill="none" stroke="white" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M890,637 L954,637 Q962,637 962,645 L962,805" fill="none" stroke="#087f86" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrc)" stroke-dasharray="6 4" />
+<path d="M1190,805 L1190,738 Q1204,730 1190,722 L1190,648 Q1190,640 1198,640 L1212,640 Q1220,626 1228,640 L1282,640 Q1290,640 1290,632 L1290,550" fill="none" stroke="white" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1190,805 L1190,738 Q1204,730 1190,722 L1190,648 Q1190,640 1198,640 L1212,640 Q1220,626 1228,640 L1282,640 Q1290,640 1290,632 L1290,550" fill="none" stroke="#087f86" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrc)" stroke-dasharray="6 4" />
+<path d="M1040,805 L1040,613 Q1040,605 1048,605 L1092,605 Q1100,591 1108,605 L1212,605 Q1220,591 1228,605 L1282,605 Q1290,591 1298,605 L1482,605 Q1490,605 1490,597 L1490,522" fill="none" stroke="white" stroke-width="5.8" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M1040,805 L1040,613 Q1040,605 1048,605 L1092,605 Q1100,591 1108,605 L1212,605 Q1220,591 1228,605 L1282,605 Q1290,591 1298,605 L1482,605 Q1490,605 1490,597 L1490,522" fill="none" stroke="#087f86" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrc)" stroke-dasharray="6 4" />
+<path d="M195,332 L205,318" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M625,317 L635,303" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M700,532 L710,518" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M895,315 L905,301" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M1005,270 L1015,256" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M1089,315 L1099,301" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M727,427 L737,413" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M460,292 L470,278" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M1219,437 L1229,423" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M1350,477 L1360,463" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M1675,477 L1685,463" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M1215,647 L1225,633" fill="none" stroke="#3d6f9a" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M1155,737 L1165,723" fill="none" stroke="#3d6f9a" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<path d="M1290,872 L1300,858" fill="none" stroke="#192d40" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" />
+<text x="48" y="48" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="31" font-weight="bold">Direct-mapped L1: tag lookup, byte storage and miss refill</text>
+<text x="48" y="80" fill="#657580" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal">The diagram follows read_cache.sv: 1024 x 8 data bits, 64 x 7 tags, 64 valid bits, and a held response register.</text>
+<text x="55" y="163" fill="#192d40" text-anchor="start" font-family="DejaVu Sans Mono,monospace" font-size="20" font-weight="bold">req_addr[16:0]</text>
+<text x="270.0" y="226.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="bold">TAG [16:10] / 7b</text>
+<text x="680.0" y="226.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="bold">INDEX [9:4] / 6b</text>
+<text x="1010.0" y="226.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="bold">OFFSET [3:0] / 4b</text>
+<text x="208" y="316" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">7</text>
+<text x="560.0" y="380" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="bold">TAG RAM</text>
+<text x="560.0" y="427.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal">64 x 7b</text>
+<text x="560.0" y="585" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="bold">VALID</text>
+<text x="560.0" y="632.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal">64 x 1b</text>
+<text x="1045.0" y="380" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="bold">DATA RAM</text>
+<text x="1045.0" y="427.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal">1024 x 8b</text>
+<text x="1045.0" y="502.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal">addr = {index, offset}</text>
+<text x="638" y="301" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">6</text>
+<text x="713" y="516" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">6</text>
+<text x="1010.0" y="314.5" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="bold">CAT</text>
+<text x="908" y="299" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">6</text>
+<text x="1018" y="270" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">4</text>
+<text x="1102" y="299" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">10</text>
+<text x="792.5" y="434.5" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="34" font-weight="bold">=</text>
+<text x="730" y="405" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">7</text>
+<text x="473" y="276" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">7</text>
+<text x="830.0" y="644.5" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="bold">AND</text>
+<text x="700" y="663" fill="#087f86" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">valid</text>
+<text x="928" y="684" fill="#087f86" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="bold">hit</text>
+<text x="1392" y="441" fill="#657580" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">D</text>
+<text x="1588" y="441" fill="#657580" text-anchor="end" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal">Q</text>
+<text x="1490.0" y="471.5" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="bold">rsp_data</text>
+<text x="1490.0" y="493.5" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal">8b</text>
+<text x="1490.0" y="515" fill="#087f86" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" font-weight="normal">EN: hit / refill</text>
+<text x="1490.0" y="407" fill="#087f86" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" font-weight="normal">CLR: rst | flush</text>
+<text x="1290.0" y="476.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="bold">2:1</text>
+<text x="1262" y="435.0" fill="#657580" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" font-weight="normal">1</text>
+<text x="1262" y="515.0" fill="#657580" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" font-weight="normal">0</text>
+<text x="1232" y="421" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">8</text>
+<text x="1363" y="461" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">8</text>
+<text x="1688" y="461" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">8</text>
+<text x="1695" y="425" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="bold">Core response</text>
+<text x="1685" y="552" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal">held until rsp_ready</text>
+<text x="1567.5" y="720" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="bold">L2: 80 KiB RAM</text>
+<text x="1567.5" y="767.0" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal">17-bit byte address</text>
+<text x="1567.5" y="828.6666666666666" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal">8-bit read / write data</text>
+<text x="1567.5" y="890.3333333333334" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal">Response delay: 4 clocks</text>
+<text x="1232" y="701" fill="#3d6f9a" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">8</text>
+<text x="1208" y="595" fill="#3d6f9a" text-anchor="end" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal">L2 return</text>
+<text x="1168" y="718" fill="#3d6f9a" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">8</text>
+<text x="1180" y="770" fill="#3d6f9a" text-anchor="end" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal">refill byte</text>
+<text x="980.0" y="878.5" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="bold">Miss / response FSM</text>
+<text x="980.0" y="907.5" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">IDLE -&gt; SEND -&gt; WAIT_L2 -&gt; RESP</text>
+<text x="1303" y="856" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">17</text>
+<text x="1295" y="830" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans Mono,monospace" font-size="12" font-weight="normal">{addr[16:4], fill_offset}</text>
+<text x="1298" y="918" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">+ WDATA / WRITE</text>
+<text x="1450" y="633" fill="#087f86" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">hit or requested refill offset</text>
+<text x="335.0" y="888.5" fill="#192d40" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="bold">Write-through / invalidate</text>
+<text x="335.0" y="917.5" fill="#657580" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal">No write allocation; no dirty lines; no prefetch</text>
+<text x="55" y="1030" fill="#192d40" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="bold">Miss refill: 16 independent byte transactions. Direct mapping needs no LRU state.</text>
+<text x="55" y="1063" fill="#657580" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal">cache_en=0 bypasses L1. flush at each accepted start clears valid bits and cache counters.</text>
+<text x="132" y="1159" fill="#657580" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">datapath bus</text>
+<text x="407" y="1159" fill="#657580" text-anchor="start" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">control / enable</text>
+<text x="1792" y="1159" fill="#657580" text-anchor="end" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal">FashionLeNet | RTL microarchitecture</text>
+<circle cx="680" cy="310" r="4" fill="#192d40" />
+<circle cx="1220" cy="730" r="4" fill="#3d6f9a" />
+<path d="M640,1152 L705,1152" fill="none" stroke="#3d6f9a" stroke-width="2.6" stroke-linecap="round" marker-end="url(#arrblue)" /><text x="723" y="1159" fill="#657580" font-family="DejaVu Sans,Arial,sans-serif" font-size="14">L2 refill / bypass return</text></svg>
