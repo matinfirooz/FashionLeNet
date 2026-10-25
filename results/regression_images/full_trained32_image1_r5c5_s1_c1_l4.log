@@ -1,0 +1,9 @@
+stage 1: 4704 INT8 outputs match
+stage 2: 1176 INT8 outputs match
+stage 3: 1600 INT8 outputs match
+stage 4: 400 INT8 outputs match
+stage 5: 120 INT8 outputs match
+stage 6: 84 INT8 outputs match
+stage 7: 10 INT8 outputs match
+PASS tb_fpga_top: cycles=2249791, executed=302578/416520, class=2, INT32 checks=6518
+/workspace/scratch/578efbcf7f60/FashionLeNet/tb/tb_fpga_top.sv:92: $finish called at 23317151000 (1ps)
