@@ -1,0 +1,1 @@
+{"input_size":32,"epochs":12,"batch_size":128,"lr":0.001,"seed":42,"threads":4,"output":"results/trained32"}

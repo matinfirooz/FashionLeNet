@@ -1,0 +1,1 @@
+{"fractions":[0.25,0.50,0.70,0.90,0.95,0.97,0.99],"methods":["unstructured","structured"],"biases_pruned":false,"classes_removed":false,"initial_sweep_finetune_epochs":0,"recovery_experiment_fraction":0.50,"recovery_finetune_epochs":3,"calibration_samples":500,"test_samples":10000}
